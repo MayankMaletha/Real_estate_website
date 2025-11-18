@@ -8,6 +8,17 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import Footer from "./Components/Footer";
 
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  // REPLACE 'Real_estate_website' WITH YOUR EXACT REPO NAME
+  // If your repo is named differently, update the text between the slashes below
+  base: "/Real_estate_website/", 
+})
+
 const App = () => {
   return (
     <div className="w-full overflow-hidden">
